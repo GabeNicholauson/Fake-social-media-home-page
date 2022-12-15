@@ -1,0 +1,24 @@
+{
+  "name": "gabriel_nicholauson_apis_final_project",
+  "version": "1.0.0",
+  "description": "This page is a fake social media home page. It will first take you to a login screen where you will have to \"login\" to view the home page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabeNicholauson/Fake-social-media-home-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabeNicholauson/Fake-social-media-home-page/issues"
+  },
+  "homepage": "https://github.com/GabeNicholauson/Fake-social-media-home-page#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

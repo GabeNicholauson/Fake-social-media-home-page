@@ -1,2 +1,138 @@
 @import './reset.css';
 
+body {
+    background-image: linear-gradient(45deg, #0dcb0d, #0a680a);
+}
+
+.container {
+    height: 100vh;
+    place-items: center;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.login {
+    height: 600px;
+    width: 85%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px rgb(0 0 0 / 0.4);
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+.account h2 {
+    margin-top: 100px;
+}
+
+.account h2, .account h3, .account h4, .info h2, .info h4 {
+    text-align: center;
+}
+
+form {
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, button {
+    width: 50%;
+    height: 35px;
+    margin-top: 20px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: solid 1px #0a680a;
+}
+
+form p {
+    font-size: 12px;
+    width: 50%;
+    margin-top: 5px;
+    color: #808080;
+}
+
+.buttons, button {
+    width: 100%;
+    justify-content: center;
+}
+
+.buttons input, button {
+    width: 24%;
+}
+
+.login-button, button {
+    background-color: #08b608;
+    border-color: #08b608;
+    color: #fff;
+}
+
+.sign-up-button {
+    margin-left: 2%;
+    background-color: #fff;
+    border-color: #08b608;
+}
+
+.login-options {
+    margin-top: 20px;
+}
+
+.all-options {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.all-options p {
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: #08b608;
+    border-radius: 50%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-options p + p {
+    margin-left: 30px;
+}
+
+.account-footer {
+    margin-top: auto;
+}
+
+.policies {
+    list-style: none;
+    font-size: 12px;
+    justify-content: center;
+    color: #808080;
+    position: relative;
+    top: 100px;
+}
+
+.policies li + li {
+    margin-left: 5%;
+}
+
+.info {
+    background: url(../img/building.jpg) no-repeat center;
+    background-size: cover;
+    box-shadow: inset 1000px 1000px rgb(0 0 0 / 0.4);
+    height: 100%;
+    place-content: center;
+}
+
+.info h2, .info h4 {
+    color: #fff;
+}
+
+.info-buttons {
+    justify-content: center;
+}
+
+.prefrences {
+    margin-left: 2%;
+}

@@ -17,6 +17,10 @@ body {
     display: flex;
 }
 
+.hidden {
+    display: none;
+}
+
 .login {
     height: 600px;
     width: 85%;
@@ -53,6 +57,12 @@ form p {
     width: 50%;
     margin-top: 5px;
     color: #808080;
+}
+
+.mistake {
+    height: 0;
+    color: #ff0000;
+    font-style: italic;
 }
 
 .buttons, button {

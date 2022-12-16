@@ -37,8 +37,8 @@ function displayFollowers(followers) { //displays random users on page
         following.innerHTML += `<div class="user flexbox">
         <div class="pfp" style="background-image: url(${followers[i].picture.medium})"></div>
         <div class="user-info">
-            <h3>${followers[i].name.first + ' ' +followers[i].name.last}</h3>
-            <p class="subtext">Employment placeholder</p>
+            <h3>${followers[i].name.first + ' ' + followers[i].name.last}</h3>
+            <p class="subtext">${followers[i].location.city}</p>
         </div>
     </div>`;
     }

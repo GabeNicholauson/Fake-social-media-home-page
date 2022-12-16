@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Gabriel Nicholauson">
+        <meta name="description" content="Home">
+        <meta name="keywords" content="HTML, CSS, SEO, web, web developpement">
+        <link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon">
+        <link rel="stylesheet" href="assets/style/home.css" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" 
+        />
+        <script src="assets/script/home.js" type="module"></script>
+        <title>Home</title>
+    </head>
+    <body>
+        <!-----Header----->
+        <header class="page-header">
+            <div class="container flexbox">
+                <h1>View</h1>
+                <nav class="header-nav">
+                    <ul class="flexbox">
+                        <li class="home"><i class="fa-solid fa-house"></i> Home</li>
+                        <li><i class="fa-solid fa-user-tie"></i> Jobs</li>
+                        <li><i class="fa-solid fa-bell"></i> Notifications</li>
+                        <li><i class="fa-solid fa-user-group"></i> Groups</li>
+                    </ul>
+
+                </nav>
+
+                <div class="search flexbox">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <form>
+                        <input type="search" class="search-bar" placeholder="Search">
+                    </form>
+                </div>
+
+                <div class="pfp"></div>
+            </div>
+        </header>
+
+        <!-----Main content----->
+        <main>
+            <div class="container">
+                <div class="home-page grid-container">
+                    <!-----Following----->
+                    <section class="following">
+                        <h2>Following</h2>
+                    </section>
+
+                    <!-----Recent posts----->
+                    <!-----Most recent----->
+                    <section class="recent-posts">
+                        <div class="post container">
+                            <header class="post-header flexbox">
+                                <div class="poster flexbox">
+                                    <div class="pfp"></div>
+                                    <div class="user-info">
+                                        <h3>John Doe Jr</h3>
+                                        <p class="subtext">General Manager</p>
+                                    </div>
+                                </div>
+                                <p class="date-posted">2 hours ago</p>
+                            </header>
+        
+                            <section class="content">
+                                <p>Another great day at the office. I am so proud of this team.</p>
+                                <img src="./assets/img/office-employees.jpg" alt="User image">
+                            </section>
+
+                            <section class="actions">
+                                <div class="container">
+                                    <ul class="flexbox">
+                                        <li><i class="fa-regular fa-heart"></i> 5345</li>
+                                        <li><i class="fa-regular fa-comment"></i> 8973</li>
+                                        <li><i class="fa-regular fa-share-from-square"></i> Share</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        
+                        <!-----Post----->
+                        <div class="post container">
+                            <header class="post-header flexbox">
+                                <div class="poster flexbox">
+                                    <div class="pfp"></div>
+                                    <div class="user-info">
+                                        <h3>John Doe the Great</h3>
+                                        <p class="subtext">CEO of coffee</p>
+                                    </div>
+                                </div>
+                                <p class="date-posted">3 hours ago</p>
+                            </header>
+        
+                            <section class="content">
+                                <p>
+                                    Just brewed the most amazing coffee. It tastes just perfect. I keep getting better at this every day.
+                                    What a perfect start to my morning.
+                                </p>
+                                <img src="./assets/img/coffee.jpg" alt="User image">
+                            </section>
+
+                            <section class="actions">
+                                <div class="container">
+                                    <ul class="flexbox">
+                                        <li><i class="fa-regular fa-heart"></i> 3890</li>
+                                        <li><i class="fa-regular fa-comment"></i> 4256</li>
+                                        <li><i class="fa-regular fa-share-from-square"></i> Share</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!-----Post----->
+                        <div class="post container">
+                            <header class="post-header flexbox">
+                                <div class="poster flexbox">
+                                    <div class="pfp"></div>
+                                    <div class="user-info">
+                                        <h3>John Doe Sr</h3>
+                                        <p class="subtext">Pilot</p>
+                                    </div>
+                                </div>
+                                <p class="date-posted">5 hours ago</p>
+                            </header>
+        
+                            <section class="content">
+                                <p>Wow 15 hours! What a long flight! I can't wait to get back home and lay down in bed.</p>
+                                <img src="./assets/img/plane.jpg" alt="User image">
+                            </section>
+
+                            <section class="actions">
+                                <div class="container">
+                                    <ul class="flexbox">
+                                        <li><i class="fa-regular fa-heart"></i> 3424</li>
+                                        <li><i class="fa-regular fa-comment"></i> 9823</li>
+                                        <li><i class="fa-regular fa-share-from-square"></i> Share</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+
+                    <!-----Current user---->
+                    <section class="current-user">
+                        <div class="container">
+                            <div class="pfp"></div>
+                            <h2>Gabriel Nicholauson</h2>
+                            <p class="subtext">Front end web developer</p>
+
+                            <div class="current-user-info flexbox">
+                                <div class="followers">
+                                    <h2>Followers</h2>
+                                    <p>1324</p>
+                                </div>
+                                <div class="connections">
+                                    <h2>Connections</h2>
+                                    <p>9868</p>
+                                </div>
+                            </div>
+
+                            <div class="customize-button flexbox">
+                                <button class="customize">Customize</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </body>      
+</html>

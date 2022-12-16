@@ -167,6 +167,7 @@ main .container {
 
 img {
     margin-top: var(--app-margin-top);
+    border-radius: var(--app-border-radius);
 }
 
 .actions {

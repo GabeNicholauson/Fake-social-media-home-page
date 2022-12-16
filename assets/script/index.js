@@ -38,7 +38,7 @@ function setEmailAndPassword() {
 function checkEmailAndPassword() {
     if (enterEmail.value === localStorage.Email && 
         enterPassword.value === localStorage.Password) {
-            window.open('../home.html', '_self');
+            window.open('home.html', '_self');
         } else {
             mistake.classList.remove('hidden');
         }

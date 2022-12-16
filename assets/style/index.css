@@ -1,24 +1,14 @@
 @import './reset.css';
+@import './variables.css';
+@import './classes.css';
 
 body {
-    background-image: linear-gradient(45deg, #0dcb0d, #0a680a);
+    background-image: linear-gradient(45deg, var(--app-green), var(--app-dark-green));
 }
 
 .container {
     height: 100vh;
     place-items: center;
-}
-
-.grid-container {
-    display: grid;
-}
-
-.flexbox {
-    display: flex;
-}
-
-.hidden {
-    display: none;
 }
 
 .login {
@@ -46,10 +36,10 @@ form {
 form input, button {
     width: 50%;
     height: 35px;
-    margin-top: 20px;
+    margin-top: var(--app-margin-top);
     padding: 0 10px;
-    border-radius: 5px;
-    border: solid 1px #0a680a;
+    border-radius: var(--app-border-radius);
+    border: solid 1px var(--app-dark-green);
 }
 
 form p {
@@ -75,31 +65,31 @@ form p {
 }
 
 .login-button, button {
-    background-color: #08b608;
-    border-color: #08b608;
+    background-color: var(--app-light-green);
+    border-color: var(--app-light-green);
     color: #fff;
 }
 
 .sign-up-button {
     margin-left: 2%;
     background-color: #fff;
-    border-color: #08b608;
+    border-color: var(--app-light-green);
 }
 
 .login-options {
-    margin-top: 20px;
+    margin-top: var(--app-margin-top);
 }
 
 .all-options {
     justify-content: center;
-    margin-top: 20px;
+    margin-top: var(--app-margin-top);
 }
 
 .all-options p {
     font-size: 25px;
     width: 40px;
     height: 40px;
-    background-color: #08b608;
+    background-color: var(--app-light-green);
     border-radius: 50%;
     color: #fff;
     justify-content: center;
@@ -131,6 +121,7 @@ form p {
     background: url(../img/building.jpg) no-repeat center;
     background-size: cover;
     box-shadow: inset 1000px 1000px rgb(0 0 0 / 0.4);
+    background-color: var(--app-dark-green);
     height: 100%;
     place-content: center;
 }

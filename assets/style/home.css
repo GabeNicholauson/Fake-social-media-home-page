@@ -109,8 +109,7 @@ main .container {
 }
 
 .home-page {
-    grid-template-columns: 25% 50% 25%;
-    width: 100%;
+    grid-template-columns: auto 50% auto;
 }
 
 /*
@@ -123,6 +122,7 @@ main .container {
     background-color: #fff;
     box-shadow: 5px 5px 20px rgb(0 0 0 / 0.1);
     padding: var(--app-margin-top);
+    height: min-content;
 }
 
 .user {
@@ -194,6 +194,7 @@ img {
     box-shadow: 5px 5px 20px rgb(0 0 0 / 0.1);
     padding: var(--app-margin-top);
     margin-left: var(--app-margin-top);
+    height: min-content;
 }
 
 .current-user .pfp {
@@ -229,4 +230,5 @@ img {
     height: 40px;
     font-size: 17px;
     margin-inline: auto;
+    border-radius: var(--app-border-radius);
 }

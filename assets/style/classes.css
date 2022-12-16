@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}

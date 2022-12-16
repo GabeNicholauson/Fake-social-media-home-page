@@ -32,8 +32,6 @@ function setEmailAndPassword() {
         localStorage.setItem('Email', email);
         localStorage.setItem('Password', password);
         console.log(localStorage);
-    } else {
-        return;
     }
 }
 

@@ -11,9 +11,7 @@ body {
 **********************************/
 
 .page-header {
-    background-color: #fff;
     border-bottom: 2px solid #f1f5fb;
-    box-shadow: 5px 5px 20px rgb(0 0 0 / 0.1);
 }
 
 .page-header h1 {
@@ -21,10 +19,8 @@ body {
 }
 
 .page-header .container {
-    align-items: center;
     width: 90%;
     height: 77px;
-    justify-content: space-between;
 }
 
 .header-nav ul {
@@ -32,13 +28,9 @@ body {
 }
 
 .header-nav ul li {
-    font-size: 16px;
-    text-align: center;
     height: 75px;
     display: flex;
-    align-items: center;
     grid-template-rows: 20px;
-    border-radius: var(--app-border-radius);
 }
 
 .header-nav ul li i {
@@ -56,8 +48,6 @@ ul li + li{
 
 .search {
     height: 100%;
-    background-color: #f1f5fb;
-    align-items: center;
     overflow: hidden;
     height: 40px;
     width: 400px;
@@ -67,13 +57,10 @@ ul li + li{
 
 .fa-magnifying-glass {
     width: 40px;
-    text-align: center;
 }
 
 .search-bar {
     width: calc(400px - 40px);
-    font-size: 16px;
-    background-color: #f1f5fb;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -89,7 +76,6 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 42px;
     width: 42px;
     border-radius: 50%;
-    background-color: #f1f5fb;
     background: url(../img/default-user.png) no-repeat center;
     background-size: contain;
     border: 2px solid #e8ebef;
@@ -100,7 +86,6 @@ input[type="search"]::-webkit-search-cancel-button {
 **********************************/
 
 main {
-    margin-top: var(--app-margin-top);
     margin-bottom: var(--app-margin-top);
 }
 
@@ -115,59 +100,17 @@ main .container {
 /*
     Left column
 */
-.following {
-    width: calc(100% - var(--app-margin-top));
-    border: 2px solid #e8ebef;
-    border-radius: var(--app-border-radius);
-    background-color: #fff;
-    box-shadow: 5px 5px 20px rgb(0 0 0 / 0.1);
-    padding: var(--app-margin-top);
-    height: min-content;
-}
-
-.user {
-    margin-top: var(--app-margin-top);
-}
 
 .user-info {
     margin-left: 15px;
-}
-
-.user-info p {
-    font-size: 13px;
 }
 
 /*
     Middle column
 */
 
-.recent-posts .container {
-    width: 100%;
-}
-
-.post {
-    border: 2px solid #e8ebef;
-    border-radius: var(--app-border-radius);
-    background-color: #fff;
-    box-shadow: 5px 5px 20px rgb(0 0 0 / 0.1);
-    padding: var(--app-margin-top);
-}
-
-.post + .post {
-    margin-top: var(--app-margin-top);
-}
-
 .date-posted {
     margin-left: auto;
-}
-
-.content {
-    margin-top: var(--app-margin-top);
-}
-
-img {
-    margin-top: var(--app-margin-top);
-    border-radius: var(--app-border-radius);
 }
 
 .actions {
@@ -188,40 +131,16 @@ img {
 */
 
 .current-user {
-    width: calc(100% - var(--app-margin-top));
-    border: 2px solid #e8ebef;
-    border-radius: var(--app-border-radius);
-    background-color: #fff;
-    box-shadow: 5px 5px 20px rgb(0 0 0 / 0.1);
-    padding: var(--app-margin-top);
     margin-left: var(--app-margin-top);
-    height: min-content;
 }
 
 .current-user .pfp {
     height: 100px;
     width: 100px;
-    margin-inline: auto;
-}
-
-.current-user h2, .customize {
-    margin-top: var(--app-margin-top);
-}
-
-.current-user h2, .current-user p {
-    text-align: center;
 }
 
 .subtext {
     color: #808080
-}
-
-.current-user-info {
-    justify-content: space-between;
-}
-
-.customize-button {
-    width: 100%;
 }
 
 .customize {
@@ -229,7 +148,71 @@ img {
     color: #fff;
     background-color: var(--app-light-green);
     height: 40px;
-    font-size: 17px;
-    margin-inline: auto;
+}
+
+/**********************************
+    Same properties
+**********************************/
+
+.page-header, .following, .post, .current-user {
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 0.1);
+}
+
+.post, .current-user, .following {
+    border: 2px solid #e8ebef;
+    padding: var(--app-margin-top);
+}
+
+.header-nav ul li, .search-bar, .customize, .user-info p {
+    font-size: 16px;
+}
+
+.header-nav ul li, .post, .current-user, .following, img, .customize {
     border-radius: var(--app-border-radius);
+}
+
+main, .user, .post + .post, .content, img, .current-user h2, .customize {
+    margin-top: var(--app-margin-top);
+}
+
+.following, .current-user {
+    width: calc(100% - var(--app-margin-top));
+    height: min-content;
+}
+
+.page-header, .post, .current-user, .following {
+    background-color: #fff;
+}
+
+.page-header .container, .search, .header-nav ul li {
+    align-items: center;
+}
+
+.page-header .container, .current-user-info {
+    justify-content: space-between;
+}
+
+.header-nav ul li, .fa-magnifying-glass, .current-user h2, .current-user p {
+    text-align: center;
+}
+
+.search, .search-bar, .pfp {
+    background-color: #f1f5fb;
+}
+
+.recent-posts .container, .customize-button {
+    width: 100%;
+}
+
+.current-user .pfp, .customize {
+    margin-inline: auto;
+}
+
+.header-nav ul li:hover, .user:hover, .poster:hover {
+    text-decoration: underline;
+}
+
+.page-header h1:hover, .header-nav ul li:hover, .user:hover, 
+.poster:hover, .pfp:hover, .actions ul li {
+    cursor: pointer;
 }

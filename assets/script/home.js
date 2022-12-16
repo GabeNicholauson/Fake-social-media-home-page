@@ -23,7 +23,6 @@ async function getUsers() { //pulls random users from api
 
         if (result.status >= 200 && result.status < 400) { //If successful
             const data = await result.json();
-            console.log(data.results);
             displayFollowers(data.results); //Give results to displayFollowers function
         }
     } catch(error) { //if there is an error
